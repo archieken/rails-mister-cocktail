@@ -1,0 +1,9 @@
+<% if !@cocktails.blank? %>
+<% for cocktail in @cocktails %>
+  <p><%=cocktail.name%></p>
+  <p><%=cocktail.id%></p>
+<% end %>
+<% else %>
+  <p>There are no cocktails!</p>
+<% end %>
+
